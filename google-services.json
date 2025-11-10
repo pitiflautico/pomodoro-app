@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "focus-timer-pomodoro",
+    "storage_bucket": "focus-timer-pomodoro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
+        "android_client_info": {
+          "package_name": "com.focustimer.pomodoro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDummyKeyForDevelopmentPurposes123456"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      },
+      "admob_app_id": "ca-app-pub-3940256099942544~3347511713"
+    }
+  ],
+  "configuration_version": "1"
+}

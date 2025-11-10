@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Focus Timer - Pomodoro",
+    "slug": "focus-timer-pomodoro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.focustimer.pomodoro",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio"],
+        "NSUserNotificationsUsageDescription": "This app uses notifications to alert you when your Pomodoro sessions and breaks are complete."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.focustimer.pomodoro",
+      "permissions": [
+        "android.permission.VIBRATE",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications",
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ],
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3940256099942544~3347511713",
+          "iosAppId": "ca-app-pub-3940256099942544~1458002511"
+        }
+      ]
+    ]
+  }
+}
