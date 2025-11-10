@@ -118,40 +118,49 @@ const styles = StyleSheet.create({
   },
   contentContainer: {
     flexGrow: 1,
-    padding: 20,
+    padding: 24,
     alignItems: 'center',
+    justifyContent: 'space-between',
   },
   header: {
-    marginTop: 20,
-    marginBottom: 40,
+    marginTop: 16,
+    marginBottom: 32,
     alignItems: 'center',
   },
   modeText: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 28,
+    fontWeight: '700',
+    letterSpacing: 0.5,
   },
   timerContainer: {
-    marginVertical: 40,
+    marginVertical: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   timerText: {
-    fontSize: 56,
-    fontWeight: 'bold',
+    fontSize: 64,
+    fontWeight: '300',
     fontVariant: ['tabular-nums'],
+    letterSpacing: -2,
   },
   controlsContainer: {
     width: '100%',
-    gap: 16,
-    marginTop: 20,
+    gap: 12,
+    marginTop: 32,
+    paddingHorizontal: 16,
   },
   button: {
     width: '100%',
+    minHeight: 56,
   },
   statusContainer: {
-    marginTop: 30,
+    marginTop: 24,
+    marginBottom: 16,
     alignItems: 'center',
   },
   statusText: {
-    fontSize: 16,
+    fontSize: 14,
+    fontWeight: '500',
   },
 });
 

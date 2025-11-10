@@ -25,16 +25,21 @@ const Button: React.FC<ButtonProps> = ({
 
   const getButtonStyle = (): ViewStyle => {
     const baseStyle: ViewStyle = {
-      borderRadius: 12,
+      borderRadius: 28, // More rounded like in design
       alignItems: 'center',
       justifyContent: 'center',
       opacity: disabled ? 0.5 : 1,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.08,
+      shadowRadius: 8,
+      elevation: 2,
     };
 
     const sizeStyles = {
-      small: { paddingVertical: 8, paddingHorizontal: 16 },
-      medium: { paddingVertical: 14, paddingHorizontal: 24 },
-      large: { paddingVertical: 18, paddingHorizontal: 32 },
+      small: { paddingVertical: 10, paddingHorizontal: 20, borderRadius: 20 },
+      medium: { paddingVertical: 14, paddingHorizontal: 28, borderRadius: 24 },
+      large: { paddingVertical: 16, paddingHorizontal: 32, borderRadius: 28 },
     };
 
     const variantStyles = {

@@ -13,8 +13,8 @@ interface CircularProgressProps {
 
 const CircularProgress: React.FC<CircularProgressProps> = ({
   progress,
-  size = 280,
-  strokeWidth = 12,
+  size = 260,
+  strokeWidth = 6, // Thinner stroke for minimalist look
   color,
   children,
 }) => {
@@ -33,7 +33,7 @@ const CircularProgress: React.FC<CircularProgressProps> = ({
           cx={size / 2}
           cy={size / 2}
           r={radius}
-          stroke={theme.colors.border}
+          stroke={theme.dark ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.06)'}
           strokeWidth={strokeWidth}
           fill="none"
         />

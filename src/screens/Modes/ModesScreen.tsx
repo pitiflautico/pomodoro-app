@@ -131,32 +131,33 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentContainer: {
-    padding: 20,
+    padding: 24,
   },
   header: {
-    marginBottom: 20,
+    marginBottom: 24,
   },
   title: {
     fontSize: 28,
-    fontWeight: 'bold',
+    fontWeight: '700',
     marginBottom: 8,
   },
   subtitle: {
-    fontSize: 16,
+    fontSize: 15,
+    fontWeight: '500',
   },
   cycleIndicator: {
     flexDirection: 'row',
     justifyContent: 'center',
     gap: 12,
-    marginBottom: 30,
+    marginBottom: 32,
   },
   cycleCircle: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
   },
   modesContainer: {
-    gap: 16,
+    gap: 12,
     marginBottom: 24,
   },
   modeCard: {
@@ -167,41 +168,43 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modeIcon: {
-    fontSize: 40,
+    fontSize: 36,
     marginRight: 16,
   },
   modeTextContainer: {
     flex: 1,
   },
   modeTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 18,
+    fontWeight: '600',
     marginBottom: 4,
   },
   modeDescription: {
-    fontSize: 14,
+    fontSize: 13,
+    fontWeight: '400',
   },
   activeIndicator: {
-    paddingHorizontal: 12,
+    paddingHorizontal: 14,
     paddingVertical: 6,
-    borderRadius: 12,
+    borderRadius: 16,
   },
   activeText: {
     color: '#ffffff',
-    fontSize: 12,
-    fontWeight: 'bold',
+    fontSize: 11,
+    fontWeight: '600',
   },
   infoCard: {
     padding: 20,
   },
   infoTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
+    fontSize: 17,
+    fontWeight: '600',
     marginBottom: 12,
   },
   infoText: {
-    fontSize: 14,
-    lineHeight: 22,
+    fontSize: 13,
+    lineHeight: 20,
+    fontWeight: '400',
   },
 });
 
